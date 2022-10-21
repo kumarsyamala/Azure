@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "msg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "myinputqueue",
+      "connection": "Servicebusdemo_SERVICEBUS"
+    },
+    {
+      "name": "outmsg",
+      "type": "serviceBus",
+      "direction": "out",
+      "queueName": "myoutputqueue",
+      "connection": "Servicebusdemo_SERVICEBUS"
+    }
+  ]
+}
